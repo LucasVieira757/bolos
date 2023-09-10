@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bolos Deliciosos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bolos Deliciosos</h1>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </header>
+
+    <nav id="menu" class="menu">
+        <ul>
+            <li><a href="#sabores">Sabores</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#bolos">Bolos</a></li>
+
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="sabores" class="section">
+            <div id="menu-info" class="menu-info"></div>
+            <!-- Título e Cardápio com preços de 50 reais -->
+            <h2 class="price-title">Delícias por R$50</h2>
+            <div id="sabor1" class="menu-card">
+                <img src="img/pexels-jorge-zaldívar-marroquín-13963477.jpg" alt="Abacaxi com Brigadeiro Branco">
+                <h3>Abacaxi com Brigadeiro Branco</h3>
+                <p> Tipo de massa: Massa branca.</p>
+                <p> O Abacaxi com Brigadeiro Branco é uma experiência tropical incrível. Nossa massa branca macia é
+                    recheada com um delicioso brigadeiro branco e, em seguida, generosamente coberta com pedaços
+                    suculentos de abacaxi fresco. Cada mordida é uma explosão de sabores tropicais e doçura que vai te
+                    transportar diretamente para uma ilha paradisíaca</p>
+                <div id="info-whatsapp" class="info-whatsapp">
+                    <button id="whatsapp-button">Comprar no WhatsApp</button>
+                </div>
+            </div>
+            </div>
+            <!-- Conteúdo do card do sabor 1 -->
+            </div>
+            </div>
+            <div id="cardapio" class="menu-card" onclick="showInfo('Beijinho', 'R$50', 'Descrição do sabor.')">
+                <img src="img/beijinho.jpg" alt="Beijinho">
+                <h3>Beijinho</h3>
+                <p> Tipo de massa: Massa branca.</p>
+                <p>Descrição: Uma combinação irresistível de doçura tropical e cremosidade. A massa branca é recheada
+                    com delicioso brigadeiro branco e pedaços suculentos de abacaxi fresco. Uma explosão de sabor que
+                    transporta você para uma jornada tropical.
+                    Beijinho</p>
+                <div id="info-whatsapp" class="info-whatsapp">
+                    <button id="whatsapp-button">Comprar no WhatsApp</button>
+                </div>
+            </div>
+            <div class="menu-card" onclick="showInfo('Brigadeiro Branco com Morango', 'R$50', 'Descrição do sabor.')">
+                <img src="img/brigade.jpg" alt="Brigadeiro Branco com Morango">
+                <h3>Brigadeiro Branco com Morango</h3>
+                <p> Tipo de massa: Massa branca.</p>
+                <p>Descrição: Inspirado na famosa sobremesa brasileira, o Beijinho é um bolo delicado e doce. A massa
+                    branca é recheada com um brigadeiro branco cremoso e macio e coberto com coco ralado. Um sabor que
+                    lembra festas e celebrações.
+                    Brigadeiro Branco com Morango</p>
+                <div id="info-whatsapp" class="info-whatsapp">
+                    <button id="whatsapp-button">Comprar no WhatsApp</button>
+                </div>
+            </div>
+            <div class="menu-card" onclick="showInfo('Prestígio', 'R$50', 'Descrição do sabor.')">
+                <img src="img/presti.jpg" alt="Prestígio">
+                <h3>Prestígio</h3>
+                <p>Tipo de massa: Massa branca ou massa de chocolate (a escolher).</p>
+                <p>Descrição: Uma fusão perfeita de texturas e sabores. Você pode optar pela massa branca ou de
+                    chocolate para este sabor. Ela é recheada com brigadeiro branco suave e afrescos de morangos,
+                    proporcionando um contraste delicioso entre a doçura e o frescor.
+                    Prestígio</p>
+
+                <div id="info-whatsapp" class="info-whatsapp">
+                    <button id="whatsapp-button">Comprar no WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Título e Cardápio com preços de 55 reais -->
+            <h2 class="price-title">Delícias por R$55</h2>
+            <div class="menu-card" onclick="showInfo('Ninho com Abacaxi', 'R$55', 'Descrição do sabor.')">
+                <img src="img/vista-superior-de-fatias-de-abacaxi-e-faca-na-tabua-com-um-inteiro-na-superficie-verde.jpg"
+                    alt="Ninho com Abacaxi">
+                <h3>Ninho com Abacaxi</h3>
+                <p>Tipo de massa: Massa branca</p>
+                <p>Descrição: O Ninho com Abacaxi é uma festa de texturas e sabores. Nossa massa branca fofinha é
+                    recheada com um creme de ninho irresistivelmente suave e alguns afrescos de abacaxi. Cada pedaço é
+                    uma jornada tropical para o paraíso dos sabores.
+                    Ninho com Coco</p>
+                <div id="info-whatsapp" class="info-whatsapp">
+                    <button id="whatsapp-button">Comprar no WhatsApp</button>
+                </div>
+            </div>
+            <div class="menu-card"
+                onclick="showInfo('Ninho com Coco', 'R$55', 'Descrição do sabor: Abacaxi com Brigadeiro Branco Massa: Massa brancaDescrição: Uma combinação irresistível de doçura tropical e cremosidade. A massa branca é recheada com delicioso brigadeiro branco e pedaços suculentos de abacaxi fresco. Uma explosão de sabor que transporta você para uma jornada tropical.')">
+                <img src="img/beijinho.jpg" alt="Ninho com Coco">
+                <h3>Ninho com Coco</h3>
+                <p>Tipo de massa: Massa branca</p>
+                <p>Descrição: O Ninho com Coco é um deleite para os amantes do coco. Nossa massa branca macia é recheada
+                    com um creme de ninho aveludado e coberto com coco ralado. Cada mordida é uma explosão de sabor
+                    tropical e textura que vai te transportar para uma ilha paradisíaca.
+                    Ninho com Morango</p>
+                <div id="info-whatsapp" class="info-whatsapp">
+                    <button id="whatsapp-button">Comprar no WhatsApp</button>
+                </div>
+            </div>
+            <div class="menu-card" onclick="showInfo('Ninho com Morango', 'R$55', 'Descrição do sabor.')">
+                <img src="img/morango.jpg" alt="Ninho com Morango">
+                <h3>Ninho com Morango</h3>
+                <p>Tipo de massa: Massa branca</p>
+                <p>Descrição: O Ninho com Morango é uma união perfeita de doçura e afresco. Nossa massa branca leve é
+                    ​​recheada com um creme de ninho sedoso e coberta com pedaços suculentos de morango fresco. Cada
+                    garfada é uma experiência de sabor vibrante e refrescante.
+                    Ninho com Pêssego</p>
+                <div id="info-whatsapp" class="info-whatsapp">
+                    <button id="whatsapp-button">Comprar no WhatsApp</button>
+                </div>
+            </div>
+            <div class="menu-card" onclick="showInfo('Ninho com Pêssego', 'R$55', 'Descrição do sabor.')">
+                <img src="img/pessego.jpg" alt="Ninho com Pêssego">
+                <h3>Ninho com Pêssego</h3>
+                <p>Tipo de massa: Massa branca</p>
+                <p>Descrição: O Ninho com Pêssego é um equilíbrio harmonioso de sabores. Nossa massa branca macia é
+                    recheada com um creme de ninho suave e complementada com pedaços de pêssego macios e suculentos.
+                    Cada mordida é uma experiência de sabor refrescante e doce.
+                    Ninho com Nutella</p>
+                <div id="info-whatsapp" class="info-whatsapp">
+                    <button id="whatsapp-button">Comprar no WhatsApp</button>
+                </div>
+            </div>
+            <!-- Título e Cardápio com preços de 60 reais -->
+            <h2 id="bolos" class="price-title">Delícias por R$60</h2>
+            <div class="menu-card" onclick="showInfo('Ameixa com Doce de Leite', 'R$60', 'Descrição do sabor.')">
+                <img src="img/presti.jpg" alt="Ameixa com Doce de Leite">
+                <h3>Ameixa com Doce de Leite</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Abacaxi com Doce de Leite', 'R$60', 'Descrição do sabor.')">
+                <img src="img/vista-superior-de-fatias-de-abacaxi-e-faca-na-tabua-com-um-inteiro-na-superficie-verde.jpg"
+                    alt="Abacaxi com Doce de Leite">
+                <h3>Abacaxi com Doce de Leite</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Creme 4 Leites', 'R$60', 'Descrição do sabor.')">
+                <img src="img/01.jpg" alt="Creme 4 Leites">
+                <h3>Creme 4 Leites</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Doce de Leite', 'R$60', 'Descrição do sabor.')">
+                <img src="img/02.jpg" alt="Doce de Leite">
+                <h3>Doce de Leite</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Mousse de Chocolate', 'R$60', 'Descrição do sabor.')">
+                <img src="img/03.jpg" alt="Mousse de Chocolate">
+                <h3>Mousse de Chocolate</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Mousse de Chocolate Branco', 'R$60', 'Descrição do sabor.')">
+                <img src="img/04.jpg" alt="Mousse de Chocolate Branco">
+                <h3>Mousse de Chocolate Branco</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Mousse de Limão', 'R$60', 'Descrição do sabor.')">
+                <img src="img/05.jpg" alt="Mousse de Limão">
+                <h3>Mousse de Limão</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Mousse de Maracujá', 'R$60', 'Descrição do sabor.')">
+                <img src="img/06.jpg" alt="Mousse de Maracujá">
+                <h3>Mousse de Maracujá</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Paçoquita', 'R$60', 'Descrição do sabor.')">
+                <img src="img/07.jpg" alt="Paçoquita">
+                <h3>Paçoquita</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Sensação', 'R$60', 'Descrição do sabor.')">
+                <img src="img/08.jpg" alt="Sensação">
+                <h3>Sensação</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Ninho com Abacaxi', 'R$60', 'Descrição do sabor.')">
+                <img src="img/09.jpg" alt="Ninho com Abacaxi">
+                <h3>Ninho com Abacaxi</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Ninho com Coco', 'R$60', 'Descrição do sabor.')">
+                <img src="img/01.jpg" alt="Ninho com Coco">
+                <h3>Ninho com Coco</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Ninho com Morango', 'R$60', 'Descrição do sabor.')">
+                <img src="img/02.jpg" alt="Ninho com Morango">
+                <h3>Ninho com Morango</h3>
+                <p class="price">R$60</p>
+            </div>
+            <div class="menu-card" onclick="showInfo('Ninho com Pêssego', 'R$60', 'Descrição do sabor.')">
+                <img src="img/03.jpg" alt="Ninho com Pêssego">
+                <h3>Ninho com Pêssego</h3>
+                <p class="price">R$60</p>
+            </div>
+
+            <!-- Título e Cardápio com preços de 70 reais -->
+            <h2 class="price-title">Delícias por R$70</h2>
+            <div class="menu-card" onclick="showInfo('Vulcão Ninho com Nutella', 'R$70', 'Descrição do sabor.')">
+                <img src="img/09.jpg" alt="Vulcão Ninho com Nutella">
+                <h3>Vulcão Ninho com Nutella</h3>
+                <p class="price">R$70</p>
+            </div>
+        </section>
+
+        <div id="menu-info" class="menu-info">
+            <div id="info-title" class="info-title">
+                <h2></h2>
+                <span class="close-btn" onclick="hideInfo()">&times;</span>
+            </div>
+            <div id="info-content" class="info-content">
+                <p></p>
+            </div>
+        </div>
+
+        <!-- Resto do conteúdo permanece o mesmo -->
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
