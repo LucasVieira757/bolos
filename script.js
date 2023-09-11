@@ -43,3 +43,14 @@ document.querySelector("#sabor-ninho-abacaxi").addEventListener("click", functio
 document.querySelector("#sabor-kitkat").addEventListener("click", function () {
     showSaborInfo("Kit Kat", "Preço: Sob consulta", "Se você é fã de Kit Kat, este bolo é para você.", "SEU-NÚMERO-DE-WHATSAPP-AQUI");
 });
+
+<!-- Inclua a biblioteca jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    $(".menu-toggle").click(function() {
+        $(".menu-list").slideToggle(); // Exibe/oculta o menu
+    });
+});
+</script>
