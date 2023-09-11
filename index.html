@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- Inclua a biblioteca Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <title>Bolos Deliciosos</title>
 </head>
 
@@ -14,20 +17,20 @@
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
     </header>
 
-<div id="menu" class="menu">
-    <div class="menu-toggle">
-        <i class="fas fa-bars"></i> <!-- Ícone de menu -->
+    <div id="menu" class="menu">
+        <div class="menu-toggle">
+            
+        </div>
+        <ul class="menu-list">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Cardápio</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
     </div>
-    <ul class="menu-list">
-        <li><a href="#">Início</a></li>
-        <li><a href="#carda">Cardápio</a></li>
-        <li><a href="#bolos">Bolos</a></li>
-        <li><a href="#whatsapp-button">Contato</a></li>
-    </ul>
-</div>
+        
 
-
-    <main id="carda"class="container">
+    <main class="container">
         <section id="sabores" class="section">
             <div id="menu-info" class="menu-info"></div>
             <!-- Título e Cardápio com preços de 50 reais -->
@@ -101,7 +104,7 @@
                     <button id="whatsapp-button">Comprar no WhatsApp</button>
                 </div>
             </div>
-            <div id="bolos" class="menu-card"
+            <div class="menu-card"
                 onclick="showInfo('Ninho com Coco', 'R$55', 'Descrição do sabor: Abacaxi com Brigadeiro Branco Massa: Massa brancaDescrição: Uma combinação irresistível de doçura tropical e cremosidade. A massa branca é recheada com delicioso brigadeiro branco e pedaços suculentos de abacaxi fresco. Uma explosão de sabor que transporta você para uma jornada tropical.')">
                 <img src="img/beijinho.jpg" alt="Ninho com Coco">
                 <h3>Ninho com Coco</h3>
@@ -235,7 +238,84 @@
 
     </main>
 
-    <script src="script.js"></script>
-</body>
+    <!-- Inclua a biblioteca jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<script>
+$(document).ready(function() {
+    $(".menu-toggle").click(function() {
+        $(".menu-list").slideToggle(); // Exibe/oculta o menu
+    });
+});
+</script>
+
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- JavaScript/jQuery -->
+<script>
+    $(document).ready(function() {
+        var menuOpen = false; // Inicialmente, o menu está fechado
+    
+        $(".menu-toggle").click(function() {
+            if (!menuOpen) {
+                // Se o menu estiver fechado, abra-o
+                $(".menu-list").slideDown();
+                menuOpen = true;
+            } else {
+                // Se o menu estiver aberto, feche-o
+                $(".menu-list").slideUp();
+                menuOpen = false;
+            }
+        });
+    });
+    </script>
+
+// script.js
+
+// Função para abrir uma conversa no WhatsApp
+function openWhatsApp(whatsappNumber) {
+    window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}`);
+}
+
+// Função para exibir informações do sabor
+function showSaborInfo(title, price, description, whatsapp) {
+    const infoTitle = document.querySelector("#info-title h2");
+    const infoPrice = document.querySelector("#info-price p");
+    const infoDescription = document.querySelector("#info-description p");
+    const whatsappButton = document.querySelector("#whatsapp-button");
+
+    infoTitle.textContent = title;
+    infoPrice.textContent = `Preço: ${price}`;
+    infoDescription.textContent = description;
+
+    // Adiciona o evento de clique ao botão do WhatsApp
+    whatsappButton.addEventListener("click", function () {
+        openWhatsApp(whatsapp);
+    });
+
+    const menuInfo = document.querySelector("#menu-info");
+    menuInfo.style.display = "block";
+}
+
+// Função para fechar a janela de informações
+function hideInfo() {
+    const menuInfo = document.querySelector("#menu-info");
+    menuInfo.style.display = "none";
+}
+
+// Event listeners para cada sabor
+document.querySelector("#sabor-ameixa").addEventListener("click", function () {
+    showSaborInfo("Ameixa com Doce de Leite", "R$60", "Uma combinação celestial que agrada a todos os paladares.", "SEU-NÚMERO-DE-WHATSAPP-AQUI");
+});
+
+document.querySelector("#sabor-ninho-abacaxi").addEventListener("click", function () {
+    showSaborInfo("Ninho com Abacaxi", "R$60", "O Ninho com Abacaxi é uma festa de texturas e sabores.", "SEU-NÚMERO-DE-WHATSAPP-AQUI");
+});
+
+document.querySelector("#sabor-kitkat").addEventListener("click", function () {
+    showSaborInfo("Kit Kat", "Preço: Sob consulta", "Se você é fã de Kit Kat, este bolo é para você.", "SEU-NÚMERO-DE-WHATSAPP-AQUI");
+});
+
+</script>
 </html>
