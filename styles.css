@@ -26,32 +26,36 @@ h1 {
 }
 
 /* Estilos para o menu */
-#menu {
-    background-color: #ff5722; /* Cor de fundo chamativa */
-    padding: 10px 0; /* Espaçamento interno no topo e na parte inferior */
-    text-align: center; /* Alinhamento centralizado do texto */
-}
-
-#menu ul {
-    list-style-type: none; /* Remove marcadores de lista */
+/* Estilos padrão do menu */
+.menu-list {
+    list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#menu ul li {
-    display: inline-block; /* Alinhar os itens horizontalmente */
-    margin: 0 20px; /* Espaçamento entre os itens do menu */
+.menu-list li {
+    margin: 0 20px;
 }
 
-#menu ul li a {
-    text-decoration: none; /* Remover sublinhado dos links */
-    color: #fff; /* Cor do texto */
-    font-weight: bold; /* Texto em negrito */
-    font-size: 16px; /* Tamanho da fonte */
-    transition: color 0.3s ease; /* Transição suave da cor do texto */
+.menu-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-#menu ul li a:hover {
-    color: #333; /* Cor do texto ao passar o mouse (contraste) */
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-list {
+        display: none; /* Oculta o menu */
+    }
+    
+    .menu-toggle {
+        cursor: pointer;
+    }
 }
 
 
