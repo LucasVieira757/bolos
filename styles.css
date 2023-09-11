@@ -6,12 +6,28 @@ body {
     padding: 0;
 }
 
+/* Estilos para o cabeçalho (header) */
 header {
-    background-color: #d32f2f;
-    text-align: center;
-    padding: 20px 0;
-    text-align: center;
+    display: flex; /* Usar um layout flexível para posicionar os elementos */
+    justify-content:space-around; /* Espaço igual entre os elementos */
+    align-items: center; /* Alinhar verticalmente ao centro */
+    background-color: #d32f2f; /* Cor de fundo do cabeçalho */
+    padding: 10px; /* Espaçamento interno no cabeçalho */
 }
+
+/* Estilos para o logo */
+.logo img {
+    max-width: 100px; /* Largura máxima do logo */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+/* Estilos para o nome da empresa */
+.company-name h1 {
+    color: #fff; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    margin: 0; /* Remover margens para evitar espaços em branco */
+}
+
 
 h1 {
     color: white;
@@ -58,7 +74,13 @@ h1 {
     }
 }
 
+header img {
+   
+    height: auto; /* Mantém a proporção original da imagem */
+    border-radius: 50%;
+    width: 100px;
 
+}
 
 /* img do cardapio*/
 .content {
